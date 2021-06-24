@@ -6,6 +6,9 @@
     --title-text-color: #212121;
     --accent-text-color: #2196F3;
     --contacts-text-color: rgba(255, 255, 255, 0.6);
+    --bold-font: 700;
+    --main-font: 500;
+
 }
 
 body{
@@ -21,7 +24,7 @@ body{
     text-decoration: none;
     color: var(--accent-text-color);
     font-family: Raleway;
-    font-weight: 700;
+    font-weight: var(--bold-font);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -36,7 +39,7 @@ body{
 .site-nav .nav-link{
     text-decoration: none;
     color: var(--title-text-color);
-    font-weight: 500;
+    font-weight: var(--main-font);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -50,7 +53,7 @@ body{
 }
 .contacts .header-contacts{
     text-decoration: none;
-    font-weight: 500;
+    font-weight: var(--main-font);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -67,19 +70,19 @@ body{
     background-color: var(--accent-bg-color);
 }
 .main-title{
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-color: var(--main-bg-color);
-text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-bg-color);
+    text-transform: uppercase;
 }
 
 .main-button{
     cursor: pointer;
     font-family: inherit;
-    font-weight: 700;
+    font-weight: var(--bold-font);
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
@@ -92,7 +95,7 @@ text-transform: uppercase;
 
 /* SECTION  */
 .section-tiltle{
-    font-weight: 700;
+    font-weight: var(--bold-font);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -103,7 +106,7 @@ text-transform: uppercase;
 /* QUALITIES */
 
 .qualities-list .qualities-tiltle{
-    font-weight: 700;
+    font-weight: var(--bold-font);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -126,7 +129,7 @@ text-transform: uppercase;
     background-color: var(--second-bg-color);
 }
 .team-title{
-    font-weight: 500;
+    font-weight: var(--main-font);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -146,7 +149,7 @@ text-transform: uppercase;
 .buttons-filter{
     font-family: inherit;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: var(--main-font);
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
@@ -166,7 +169,7 @@ text-transform: uppercase;
     text-decoration: none;
 }
 .products-title{
-    font-weight: 700;
+    font-weight: var(--bold-font);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
