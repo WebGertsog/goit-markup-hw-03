@@ -7,7 +7,7 @@
     --accent-text-color: #2196F3;
     --contacts-text-color: rgba(255, 255, 255, 0.6);
     --bold-font: 700;
-    --main-font: 500;
+    --middle-font: 500;
 
 }
 
@@ -39,7 +39,7 @@ body{
 .site-nav .nav-link{
     text-decoration: none;
     color: var(--title-text-color);
-    font-weight: var(--main-font);
+    font-weight: var(--middle-font);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -53,7 +53,7 @@ body{
 }
 .contacts .header-contacts{
     text-decoration: none;
-    font-weight: var(--main-font);
+    font-weight: var(--middle-font);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -129,7 +129,7 @@ body{
     background-color: var(--second-bg-color);
 }
 .team-title{
-    font-weight: var(--main-font);
+    font-weight: var(--middle-font);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -149,7 +149,7 @@ body{
 .buttons-filter{
     font-family: inherit;
     cursor: pointer;
-    font-weight: var(--main-font);
+    font-weight: var(--middle-font);
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
