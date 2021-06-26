@@ -18,9 +18,31 @@ body{
     font-weight: 400;
 }
 
-/* Navigation */
+/* header */
+.header{
+    border-top: 1px solid #ECECEC;
+}
 
+/* container */
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation */
 .logo{
+    margin-right: 93px;
     text-decoration: none;
     color: var(--accent-text-color);
     font-family: Raleway;
@@ -32,13 +54,26 @@ body{
 .logo .logo-color{
     color: #000;
 }
-.list,
-.contacts{
+.list{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
+
+.site-nav{
+    display: flex;
+}
+.site-nav .item + .item{
+    margin-left: 50px;
+}
 .site-nav .nav-link{
-    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
+
+    text-decoration: none;
     font-weight: var(--middle-font);
     font-size: 14px;
     line-height: 1.14;
@@ -51,7 +86,19 @@ body{
 .site-nav .nav-link.current{
     color: var(--accent-text-color);
 }
+
+.contacts{
+    display: flex;
+    margin-left: auto;
+}
+.contacts .item + .item{
+    margin-left: 50px;
+}
+
 .contacts .header-contacts{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-decoration: none;
     font-weight: var(--middle-font);
     font-size: 14px;
@@ -65,21 +112,27 @@ body{
 }
 
             /* --STUDIO-- */
+
 /* MAIN */
 .main-section{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--accent-bg-color);
+    text-align: center;
 }
 .main-title{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--main-bg-color);
     text-transform: uppercase;
 }
 
 .main-button{
+    padding: 10px 32px;
     cursor: pointer;
     font-family: inherit;
     font-weight: var(--bold-font);
@@ -94,18 +147,30 @@ body{
     }
 
 /* SECTION  */
-.section-tiltle{
-    font-weight: var(--bold-font);
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 
 /* QUALITIES */
 
+.qualities{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.qualities-list{
+    display: flex;
+    outline: 1px solid orangered;
+}
+.qualities-list .qualities-item:not(:last-child) {
+    margin-right: 30px;
+}
 .qualities-list .qualities-tiltle{
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: var(--bold-font);
     font-size: 14px;
     line-height: 1.14;
@@ -114,6 +179,8 @@ body{
     text-transform: uppercase;
 }
 .qualities-list .qualities-text{
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -122,13 +189,29 @@ body{
 
 /* DIRECTION */
 
-
+.direction{
+    padding-bottom: 94px;
+}
+.section-tiltle{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: var(--bold-font);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
 /* TEAM */
 
 .team{
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--second-bg-color);
 }
 .team-title{
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: var(--middle-font);
     font-size: 16px;
     line-height: 1.19;
@@ -137,6 +220,8 @@ body{
     color: var(--title-text-color);
 }
 .team-text{
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -168,7 +253,18 @@ body{
 .link{
     text-decoration: none;
 }
+
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.portfolio-buttons{
+    margin-bottom: 50px;
+}
+
 .products-title{
+    margin-top: 0;
+    margin-bottom: 4px;
     font-weight: var(--bold-font);
     font-size: 18px;
     line-height: 2;
@@ -176,6 +272,8 @@ body{
     color: var(--title-text-color);
 }
 .products-text{
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -185,8 +283,11 @@ body{
 /* FOOTER */
 
 .footer{
+    padding-top: 111px;
+    padding-bottom: 60px;
     background-color: var(--accent-bg-color);
 }
+
 .footer .logo-inverse-color{
     color: var(--main-bg-color);
 }
