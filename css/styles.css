@@ -18,7 +18,12 @@ body{
     font-family: Roboto, sans-serif;
     font-weight: 400;
 }
-
+/* отзывчивые изображения */
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
 /* header */
 .header{
     border-top: 1px solid #ECECEC;
@@ -150,6 +155,7 @@ body{
     letter-spacing: 0.06em;
     color: var(--main-bg-color);
     background-color: var(--accent-text-color);
+    border-color: transparent;
     border-style: none;
     border-radius: 4px;
     }
@@ -221,18 +227,19 @@ body{
     padding-bottom: 94px;
     background-color: var(--second-bg-color);
 }
-.team-item{
+
+.team-item .team-item-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--main-bg-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    
-
 }
 .team-item:not(:last-child){
     margin-right: 30px;
 }
 .team-title{
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
     font-weight: var(--middle-font);
     font-size: 16px;
@@ -243,7 +250,7 @@ body{
 }
 .team-text{
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -261,6 +268,7 @@ body{
     justify-content: center;
 }
 .buttons-filter{
+    padding: 6px 22px;
     font-family: inherit;
     cursor: pointer;
     font-weight: var(--middle-font);
@@ -270,6 +278,7 @@ body{
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     background-color: var(--second-bg-color);
+    border-color: transparent;
     border-style: none;
     border-radius: 4px;
 }
@@ -287,22 +296,23 @@ body{
     text-decoration: none;
 }
 
-
+/* ----------------------------------------------------------------------------------- */
 /* products */
 .products{
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin-top: calc(-1 * var(--thirty-pixels));
+    margin-left: calc(-1 * var(--thirty-pixels));
 }
 .products  .products-item{
-    background: var(--main-bg-color);
-    border: 1px solid #EEEEEE;
+    /* background: var(--main-bg-color);
+    border: 1px solid #EEEEEE; */
     
-    flex-basis: calc((100% - 90px) /3);
-    margin-top: 30px;
-    margin-left: 30px;
+    flex-basis: calc(100% / 3 - var(--thirty-pixels));
+    margin-top: var(--thirty-pixels);
+    margin-left: var(--thirty-pixels);
 }
+
 
 .products-title{
     margin-top: 20px;
