@@ -8,6 +8,7 @@
     --contacts-text-color: rgba(255, 255, 255, 0.6);
     --bold-font: 700;
     --middle-font: 500;
+    --thirty-pixels: 30px;
 
 }
 
@@ -42,7 +43,6 @@ body{
 
 /* Navigation */
 .logo{
-    margin-right: 93px;
     text-decoration: none;
     color: var(--accent-text-color);
     font-family: Raleway;
@@ -60,8 +60,16 @@ body{
     list-style: none;
 }
 
-.site-nav{
+.site-nav,
+.qualities-list,
+.direction-list,
+.team-list,
+.portfolio-buttons{
     display: flex;
+}
+
+.site-nav{
+    margin-left: 93px;
 }
 .site-nav .item + .item{
     margin-left: 50px;
@@ -161,13 +169,14 @@ body{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.qualities-list{
-    display: flex;
-    outline: 1px solid orangered;
+
+.qualities-list .qualities-item{
+    flex-basis: calc(100% / 4);
 }
-.qualities-list .qualities-item:not(:last-child) {
+.qualities-list .qualities-item:not(:last-child){
     margin-right: 30px;
 }
+
 .qualities-list .qualities-tiltle{
     margin-top: 0;
     margin-bottom: 10px;
@@ -192,6 +201,9 @@ body{
 .direction{
     padding-bottom: 94px;
 }
+.direction-item:not(:last-child){
+    margin-right: 30px;
+}
 .section-tiltle{
     margin-top: 0;
     margin-bottom: 50px;
@@ -209,8 +221,18 @@ body{
     padding-bottom: 94px;
     background-color: var(--second-bg-color);
 }
+.team-item{
+    background-color: var(--main-bg-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+
+}
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
 .team-title{
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: var(--middle-font);
     font-size: 16px;
@@ -221,7 +243,7 @@ body{
 }
 .team-text{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -230,7 +252,14 @@ body{
 }
 
         /* --PORTFOLIO-- */
-
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.portfolio-buttons{
+    margin-bottom: 50px;
+    justify-content: center;
+}
 .buttons-filter{
     font-family: inherit;
     cursor: pointer;
@@ -250,20 +279,33 @@ body{
     background-color: var(--accent-text-color);
 }
 
+.portfolio-buttons .filter-item + .filter-item{
+    margin-left: 8px;
+}
+
 .link{
     text-decoration: none;
 }
 
-.portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+/* products */
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
 }
-.portfolio-buttons{
-    margin-bottom: 50px;
+.products  .products-item{
+    background: var(--main-bg-color);
+    border: 1px solid #EEEEEE;
+    
+    flex-basis: calc((100% - 90px) /3);
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .products-title{
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 4px;
     font-weight: var(--bold-font);
     font-size: 18px;
@@ -273,7 +315,7 @@ body{
 }
 .products-text{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -283,29 +325,39 @@ body{
 /* FOOTER */
 
 .footer{
-    padding-top: 111px;
+    padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-bg-color);
+}
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .footer .logo-inverse-color{
     color: var(--main-bg-color);
 }
 .footer .address{
+    margin-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--main-bg-color);
 }
-.contacts .footer-contacts{
+.footer-list .footer-item:not(:last-child){
+    margin-bottom: 9px;
+}
+.footer-list .footer-contacts{
+    padding-top: 4px;
+    padding-bottom: 4px;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--contacts-text-color);
 }
-.contacts .footer-contacts:hover,
-.contacts .footer-contacts:focus{
+.footer-list .footer-contacts:hover,
+.footer-list .footer-contacts:focus{
     color: var(--accent-text-color);
 }
