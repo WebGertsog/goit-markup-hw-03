@@ -9,6 +9,8 @@
     --bold-font: 700;
     --middle-font: 500;
     --thirty-pixels: 30px;
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --bottom-border:  1px solid #EEEEEE;
 
 }
 
@@ -228,15 +230,18 @@ img {
     background-color: var(--second-bg-color);
 }
 
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
+.team-item{
+    background-color: var(--main-bg-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: var(--card-shadow) ;
+}
 .team-item .team-item-bottom{
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: var(--main-bg-color);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-item:not(:last-child){
-    margin-right: 30px;
+    
 }
 .team-title{
     margin-top: 0;
@@ -304,18 +309,22 @@ img {
     margin-top: calc(-1 * var(--thirty-pixels));
     margin-left: calc(-1 * var(--thirty-pixels));
 }
+            /* LI */
 .products  .products-item{
-    /* background: var(--main-bg-color);
-    border: 1px solid #EEEEEE; */
-    
+    background: var(--main-bg-color);
     flex-basis: calc(100% / 3 - var(--thirty-pixels));
     margin-top: var(--thirty-pixels);
     margin-left: var(--thirty-pixels);
 }
-
+.products-bottom-block{
+    padding: 20px 24px;
+    border-right: var(--bottom-border);
+    border-bottom: var(--bottom-border);
+    border-left: var(--bottom-border);
+}
 
 .products-title{
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
     font-weight: var(--bold-font);
     font-size: 18px;
@@ -325,7 +334,7 @@ img {
 }
 .products-text{
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
